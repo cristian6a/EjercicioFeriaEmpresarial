@@ -504,9 +504,8 @@ public class FeriaEmpresarial {
 
 
             respuesta1 = new String();
-            if (numeroNorte==0 && numeroNorte==0 && numeroNorte==0 && numeroNorte==0){
-                respuesta1 = "Todas las zonas están vacías";
-            }
+
+
             if (numeroNorte >= numeroOriente && numeroNorte >= numeroOccidente && numeroNorte >= numeroCentro && numeroNorte >= numeroSur) {
                 respuesta1 = "La zona con mayor número de expositores es la norte";
             }
@@ -521,6 +520,9 @@ public class FeriaEmpresarial {
             }
             if (numeroSur >= numeroNorte && numeroSur >= numeroOccidente && numeroSur >= numeroOriente && numeroOriente >= numeroSur) {
                 respuesta1 = "La zona con mayor número de expositores es la sur";
+            }
+            if (numeroNorte==0 && numeroNorte==0 && numeroNorte==0 && numeroNorte==0){
+                respuesta1 = "Todas las zonas están vacías";
             }
         return respuesta1;
         }
